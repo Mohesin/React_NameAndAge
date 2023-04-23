@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/React_NameAndAge/static/css/main.56f2e272.css",
+    "main.js": "/React_NameAndAge/static/js/main.abdac727.js",
+    "index.html": "/React_NameAndAge/index.html",
+    "main.56f2e272.css.map": "/React_NameAndAge/static/css/main.56f2e272.css.map",
+    "main.abdac727.js.map": "/React_NameAndAge/static/js/main.abdac727.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56f2e272.css",
+    "static/js/main.abdac727.js"
+  ]
+}
