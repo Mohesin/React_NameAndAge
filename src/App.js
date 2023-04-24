@@ -14,7 +14,9 @@ function App() {
   const onDeleteUser = (ID)=>{
    setUsersList((prevUserList)=>{
     const oldUserList = prevUserList.filter(user=>user.id !== ID)
+    alert('USER REMOVED')
     return oldUserList;
+   
    })
   }
 
