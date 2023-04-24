@@ -7,14 +7,21 @@ function App() {
 
   const adduserhandler = (userName, userAge) => {
     setUsersList((prevUserList) => {
-      return [...prevUserList, { name: userName, age: userAge , id: Math.random().toString }];
+      return [ { name: userName, age: userAge , id: Math.random().toString() },...prevUserList];
     });
   };
+
+  const onDeleteUser = (ID)=>{
+   setUsersList((prevUserList)=>{
+    const oldUserList = prevUserList.filter(user=>user.id !== ID)
+    return oldUserList;
+   })
+  }
 
     return (
       <>
         <AddUser onAddUser={adduserhandler} />
-        <UsersList users={usersList} />
+        <UsersList deleteUser={onDeleteUser} users={usersList} />
       </>
     );
   };
